@@ -2,7 +2,7 @@ name: GLaDOS Quick Deploy
 run-name: GLaDOS Quick Deploy · ${{ inputs.deployment_id || github.event_name }} · ${{ inputs.account_key || 'all' }}
 on:
   schedule:
-    - cron: '30 2 * * *'
+    - cron: '30 4 * * *'
   workflow_dispatch:
     inputs:
       deployment_id:
@@ -30,7 +30,7 @@ jobs:
       - name: Select accounts
         id: accounts
         env:
-          ALL_ACCOUNTS: '["85EB2FD65EC54FBC"]'
+          ALL_ACCOUNTS: '["85EB2FD65EC54FBC","B58C05D3D0799136"]'
           TARGET_ACCOUNT: ${{ inputs.account_key }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
