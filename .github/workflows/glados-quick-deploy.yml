@@ -3,8 +3,6 @@ run-name: GLaDOS Quick Deploy · ${{ inputs.deployment_id || github.event_name }
 on:
   schedule:
     - cron: '30 4 * * *'
-    # TEMP-SCHEDULE-RETEST-20261008: 2026-10-08 08:17 UTC; remove after verification.
-    - cron: '17 8 8 10 *'
   workflow_dispatch:
     inputs:
       deployment_id:
