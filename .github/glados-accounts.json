@@ -1,16 +1,43 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "accounts": [
     {
-      "accountKey": "85EB2FD65EC54FBC"
+      "accountKey": "85EB2FD65EC54FBC",
+      "times": [
+        "12:30"
+      ],
+      "exchangePlan": "plan500",
+      "enabled": true
     },
     {
-      "accountKey": "B58C05D3D0799136"
+      "accountKey": "B58C05D3D0799136",
+      "times": [
+        "12:30"
+      ],
+      "exchangePlan": "plan500",
+      "enabled": true
     }
   ],
   "exchangePlan": "plan500",
   "time": "12:30",
   "timezone": "Asia/Taipei",
   "upstreamRepository": "lankerr/2026-glados-checkin",
-  "upstreamSHA": "b4ed1f9abeba4ef6244c0e7fd99333970b81d341"
+  "upstreamSHA": "b4ed1f9abeba4ef6244c0e7fd99333970b81d341",
+  "appVersion": "1.2.0",
+  "defaults": {
+    "times": [
+      "12:30"
+    ],
+    "exchangePlan": "plan500"
+  },
+  "maintenance": {
+    "retentionDays": 3,
+    "cleanupTime": "03:43",
+    "cleanupEnabled": true,
+    "keepaliveEnabled": true
+  },
+  "reporting": {
+    "keyId": "aedf92eea6964a965045e76ccfb01365",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA08amjmhE5gc7uI+PV6Je\nHe2dJKRTpJcJJC1N/aUJG2tnsOOWDYgC3CKpeQVm/JJCh0ujyIrWMgzIyBHmuU2p\nk5W+glOLjGHNCIPsf2e6Dm5rL1mn9uJkHPtP9wo1RdwP3MkYJLjkv2RHQHInX5aY\n5XiSd4AfyMEciE1gdg0eOohuZVrzG9FTkrshIN+lZYCxgEj6MVd4UwQ9e+heS5Fv\njGN4c/cXjs3TCpQEf8ZESSOQr52bQKvCQp2knZrtO7l0ylwQelek2mvQIIEbVpyR\ne32HnRwcMDI5jRp62clePNnOt7dxIbhkgPWiF/0jzqy0reoUfaLRZJcjNCOLtYG2\nbIDF6/xQ0Rznl+hKJe/g4uGcguzzjunQWkEPbxhzHiH+Qyr67gyKS2kWNnONYoH4\nHXz9fd6QGX9n7tKQxADDGpqNJGkjZe4QvfcuXl1einAjwT4e81kgfTIHqxP9r6VY\nn8HVl7ByRCd6pmvIaR2gTxYTRjxlhasRSUcZNQpd+Y8DAgMBAAE=\n-----END PUBLIC KEY-----\n"
+  }
 }
