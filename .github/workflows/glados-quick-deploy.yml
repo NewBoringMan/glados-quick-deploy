@@ -3,7 +3,7 @@ run-name: GLaDOS Quick Deploy · ${{ inputs.deployment_id || github.event_name }
 on:
   schedule:
     - cron: '38 19 * * *'
-    - cron: '30 4 * * *'
+    - cron: '30 21 * * *'
   workflow_dispatch:
     inputs:
       deployment_id:
